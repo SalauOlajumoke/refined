@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>number</title>
+	</head>
+	<body>
+	<?php
+		
+		FUNCTION PRINTFIBO($n)
+		{
+		$fterm = 0;
+		$sterm = 1 ; 
+		echo  ucfirst("implementation of fibonacci series using php<br/>");
+		
+		echo "{$fterm} <br />";
+		echo "{$sterm} <br />" ;		
+		for ($i =2; $i< $n; $i++){
+		$tterm = $fterm + $sterm;
+		echo "{$tterm} <br />";
+
+		$fterm = $sterm;
+		$sterm = $tterm;
+		
+				}
+	}		
+				/*to print fibonacci of ten numbers*/
+				PRINTFIBO(10); 
+		          ?>
+	</body>
+	</html>
